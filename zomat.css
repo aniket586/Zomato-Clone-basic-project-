@@ -91,12 +91,14 @@ body {
   color: #1d3557;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .explore__menu__lists {
-  margin-top: 45px;
+    margin-top: 45px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
-    padding: 0 30px;
+    padding: 0 10px;
   }
 
   .explore__menu__container {
@@ -126,18 +128,18 @@ body {
 
   .navbar {
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px 20px;
   }
 
   .hero__container {
     margin-top: 20px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     align-items: center;
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .container {
      max-width: 70%;
   }
@@ -169,7 +171,7 @@ body {
 }
 
 .footer {
-  
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: #f5f5f5;
@@ -181,6 +183,3 @@ body {
 .social-icons img {
   margin: 0 10px; /* Adjust spacing between icons */
 }
-
-
-
